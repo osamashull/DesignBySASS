@@ -1,0 +1,109 @@
+@import 'sass/helpers/variables';
+
+$float-left: right;
+$float-right: left;
+
+$text-right: left;
+$text-left: right;
+
+// Start Header Section
+.header {
+    .logo {
+        @media #{$minMedium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        .the-toggler {
+            right: auto;
+            left: 15px;
+        }
+    }
+    .navbar {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+        li {
+            float: $float-left;
+            @media #{$maxMobile} {
+                text-align: $text-left;
+            }
+        }
+    }
+} 
+// End Header Section 
+
+
+// Start Body Section
+// Start Services Section
+.services {
+    .service-box {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+    }
+}
+// End Services Section
+
+// Start our-players Section
+.our-players {
+    .player-box {
+        float: $float-left;
+        @media #{$minMedium} {
+            text-align: $text-left;
+        }
+    }
+}
+// End our-players Section
+
+// Start Lorem Ipsum Section
+.lorem-ipsum {
+    .lorem-box {
+        float: $float-left;
+        @media #{$minSmall} {
+            &:not(:last-of-type) {
+                margin-right: 0;
+                margin-left: 3%;
+            }
+        }
+    }
+}
+// End Lorem Ipsum Section
+// End Body Section
+
+
+// Start Footer Section
+.footer {
+    @media #{$minSmall} {
+        .gallery,
+        .info,
+        .contact {
+            float: $float-left;
+        }
+    }
+    .gallery {
+        .img-box {
+            @media #{$minSmall} {
+                float: $float-right;
+            }
+            .text {
+                @media #{$minSmall} {
+                    float: $float-right;
+                }
+            }
+        }
+    }
+    .copyright {
+        .text,
+        .author {
+            @media #{$minSmall} {
+                float: $float-left;
+            }
+        }
+        .author {
+            @media #{$minSmall} {
+                text-align: $text-right;
+            }
+        }
+    }
+}
+// End Footer Section

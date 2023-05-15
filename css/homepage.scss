@@ -1,0 +1,11 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+// variables and mixins must be in the first always
+@import 'sass/layout/grid';
+@import 'sass/components/buttons';
+@import 'sass/components/headingSection';
+
+@import 'sass/pages/globalpage';
+@import 'sass/layout/header';
+@import 'sass/pages/homepage';
+@import 'sass/layout/footer';

@@ -1,0 +1,138 @@
+// Start Footer Section
+.footer {
+    background-color: #e2e2e2;
+    padding-top: 30px;
+    margin-top: 30px;
+    overflow-x: hidden;
+    @media #{$maxMobile} {
+        .gallery,
+        .info,
+        .contact {
+            margin-bottom: 40px;
+        }
+    }
+    @media #{$minSmall} {
+        .gallery,
+        .info,
+        .contact {
+            float: $float-left;
+        }
+    }
+    .gallery {
+        @media #{$minSmall} {
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
+        .img-box {
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            @media #{$minSmall} {
+                float: $float-right;
+            }
+            .text {
+                @media #{$minSmall} {
+                    float: $float-right;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    width: calc(100% - 180px);
+                }
+                h4 {
+                    margin: 20px 0 0;
+                }
+                p {
+                    margin: 5px 0 0;
+                    color: #888;
+                    line-height: 1.9;
+                }
+            }
+        }
+    }
+    .info {
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        ul {
+            color: #888;
+            line-height: 1.8;
+            li {
+                span {
+                    color: $redColor;
+                    cursor: pointer;
+                }
+            }
+        }
+        h4 {
+            color: #888;
+            margin-bottom: 0;
+        }
+        p {
+            color: #888;
+            margin-top: 8px;
+        }
+    }
+    .contact {
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            border: 1px solid #c9c9c9;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            @media #{$maxMobile} {
+                width: 100%;
+            }
+        }
+        textarea {
+            min-height: 140px;
+            resize: none;
+        }
+    }
+    .section-title {
+        color: #444;
+        font-weight: normal;
+    }
+    .copyright {
+        margin-top: 30px;
+        color: #888;
+        padding: 25px 0;
+        overflow: hidden;
+        border-top: 1px solid #c5c5c5;
+        .text,
+        .author {
+            @media #{$maxMobile} {
+                width: 100%;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+            @media #{$minSmall} {
+                float: $float-left;
+                width: 50%;
+            }
+        }
+        .author {
+            @media #{$minSmall} {
+                text-align: $text-right;
+            }
+        }
+    }
+}
+// End Footer Section
